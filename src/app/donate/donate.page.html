@@ -1,0 +1,21 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/donor-landing"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Donate</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="donate-content">
+  <div class="container">
+    <h2 class="welcome-message">Welcome, Donor!</h2>
+
+    <ion-item>
+      <ion-label position="floating">Amount</ion-label>
+      <ion-input type="number"></ion-input>
+    </ion-item>
+
+    <ion-button expand="full" class="donate-button" (click)="navigateToDonorLanding()">Donate</ion-button>
+  </div>
+</ion-content>

@@ -1,0 +1,79 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+    height: 100%;
+  }
+  
+  .welcome-message {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 24px;
+  }
+  
+  .donation-card,
+  .projects-card,
+  .expenses-card {
+    background-color: #F6F6F6;
+    border-radius: 8px;
+    padding: 16px;
+    margin-bottom: 16px;
+  }
+  
+  .donation-card ion-card-header,
+  .projects-card ion-card-header,
+  .expenses-card ion-card-header {
+    border: none;
+  }
+  
+  .donation-card ion-card-title,
+  .projects-card ion-card-title,
+  .expenses-card ion-card-title {
+    font-weight: bold;
+    font-size: 20px;
+    color: #333333;
+  }
+  
+  .donation-card ion-card-content,
+  .projects-card ion-card-content,
+  .expenses-card ion-card-content {
+    padding: 0;
+  }
+  
+  .donation-amount {
+    font-size: 18px;
+    margin-top: 16px;
+  }
+  
+  .projects-card ion-list,
+  .expenses-card ion-list {
+    margin-top: 8px;
+  }
+  
+  .projects-card ion-item,
+  .expenses-card ion-item {
+    --border-color: transparent;
+    --background: #FFFFFF;
+    --color: #333333;
+    --padding-start: 8px;
+    --padding-end: 8px;
+    --inner-padding-end: 16px;
+  }
+  
+  .projects-card ion-label,
+  .expenses-card ion-label {
+    font-weight: bold;
+  }
+  
+  .projects-card ion-note,
+  .expenses-card ion-note {
+    color: #666666;
+  }
+  
+  .projects-card ion-item:last-child,
+  .expenses-card ion-item:last-child {
+    --border-color: transparent;
+  }
+  

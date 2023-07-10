@@ -1,0 +1,51 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/welcome"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Landing - Admin</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="landing-content">
+  <div class="container">
+    <h2>Welcome, Admin!</h2>
+
+    <div class="donation-details">
+      <ion-card class="donations-card">
+        <ion-card-header>
+          <ion-card-title>Total Donations</ion-card-title>
+        </ion-card-header>
+        <ion-card-content>
+          <!-- Display total donation amount here -->
+          <h3>$5000</h3>
+        </ion-card-content>
+      </ion-card>
+
+      <ion-card class="project-card">
+        <ion-card-header>
+          <ion-card-title>Project Details</ion-card-title>
+        </ion-card-header>
+        <ion-card-content>
+          <!-- Display project details here -->
+          <p>Project Name: XYZ</p>
+          <p>Project Description: Lorem ipsum dolor sit amet...</p>
+        </ion-card-content>
+      </ion-card>
+
+      <ion-card class="expenses-card">
+        <ion-card-header>
+          <ion-card-title>Expenses</ion-card-title>
+        </ion-card-header>
+        <ion-card-content>
+          <!-- Display expenses details here -->
+          <p>Expense 1: $1000</p>
+          <p>Expense 2: $500</p>
+          <p>Expense 3: $750</p>
+        </ion-card-content>
+      </ion-card>
+    </div>
+
+    <ion-button expand="full" (click)="navigateToDashboard()" class="dashboard-button">Go to Dashboard</ion-button>
+  </div>
+</ion-content>

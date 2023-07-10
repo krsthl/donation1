@@ -1,0 +1,54 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/landing"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Dashboard - Donor</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="container">
+    <h2>Welcome, Donor!</h2>
+
+
+    <ion-card>
+      <ion-card-header>
+        <ion-card-title>Total Donation in {{ currentMonth }}</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        <h3>{{ totalDonation | currency }}</h3>
+      </ion-card-content>
+    </ion-card>
+
+    <ion-card>
+      <ion-card-header>
+        <ion-card-title>Projects</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        <ion-list>
+          <ion-item *ngFor="let project of projects">
+            <ion-label>{{ project.name }}</ion-label>
+            <ion-note slot="end">{{ project.description }}</ion-note>
+          </ion-item>
+        </ion-list>
+      </ion-card-content>
+    </ion-card>
+
+    <ion-card>
+      <ion-card-header>
+        <ion-card-title>Expenses</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        <ion-list>
+          <ion-item *ngFor="let expense of expenses">
+            <ion-label>{{ expense.name }}</ion-label>
+            <ion-note slot="end">{{ expense.amount | currency }}</ion-note>
+          </ion-item>
+        </ion-list>
+      </ion-card-content>
+    </ion-card>
+
+
+  </div>
+</ion-content>

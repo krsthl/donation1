@@ -1,0 +1,41 @@
+.dashboard-content {
+    background-color: #f3f3f3;
+    padding: 20px;
+  }
+  
+  .container {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .welcome-message {
+    text-align: center;
+    font-size: 24px;
+    font-family: fantasy;
+    font-style: papyrus;
+    margin-bottom: 20px;
+  }
+  
+  .card-title {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .donation-amount {
+    font-size: 24px;
+    text-align: center;
+    margin: 10px 0;
+  }
+  
+  .project-info, .expense-info {
+    margin: 5px 0;
+  }
+  
+  .admin-dashboard ion-card {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  

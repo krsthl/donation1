@@ -1,0 +1,57 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/welcome"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Landing - Donor</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="landing-content">
+  <div class="container">
+    <h2>Welcome, Donor!</h2>
+
+    <ion-card class="donation-card">
+      <ion-card-header>
+        <ion-card-title>Your Donation</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        <!-- Display the donor's donation amount -->
+        <p>Thank you for your generous donation of $1000!</p>
+      </ion-card-content>
+    </ion-card>
+
+    <ion-card class="news-updates-card">
+      <ion-card-header>
+        <ion-card-title>News Updates</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        <!-- Display news updates -->
+        <p>Stay informed about the latest developments and success stories.</p>
+        <ul>
+          <li>News Item 1</li>
+          <li>News Item 2</li>
+          <li>News Item 3</li>
+        </ul>
+      </ion-card-content>
+    </ion-card>
+
+    <ion-card class="announcements-card">
+      <ion-card-header>
+        <ion-card-title>Announcements</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        <!-- Display announcements -->
+        <p>Important announcements and upcoming events will be posted here.</p>
+        <ul>
+          <li>Announcement 1</li>
+          <li>Announcement 2</li>
+          <li>Announcement 3</li>
+        </ul>
+      </ion-card-content>
+    </ion-card>
+
+    <ion-button expand="full" (click)="navigateToDashboard()">Go to Dashboard</ion-button>
+
+  </div>
+</ion-content>

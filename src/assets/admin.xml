@@ -1,0 +1,6 @@
+<admin>
+  <name>Admin Name</name>
+  <username>admin123</username>
+  <password>adminpassword</password>
+  <role>Admin</role>
+</admin>

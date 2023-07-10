@@ -1,0 +1,7 @@
+<donor>
+  <name>John Doe</name>
+  <username>johndoe</username>
+  <password>password123</password>
+  <role>Donor</role>
+  <donationAmount>100</donationAmount>
+</donor>

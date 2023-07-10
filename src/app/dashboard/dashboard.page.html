@@ -1,0 +1,49 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/landing"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Dashboard - Admin</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="dashboard-content">
+  <div class="container">
+    <h2 class="welcome-message">Welcome, Admin!</h2>
+
+    <div class="admin-dashboard">
+      <ion-card class="donations-card">
+        <ion-card-header>
+          <ion-card-title class="card-title">Total Donations</ion-card-title>
+        </ion-card-header>
+        <ion-card-content>
+          <!-- Display total donation amount for admin here -->
+          <h3 class="donation-amount">$5000</h3>
+        </ion-card-content>
+      </ion-card>
+
+      <ion-card class="project-card">
+        <ion-card-header>
+          <ion-card-title class="card-title">Project Details</ion-card-title>
+        </ion-card-header>
+        <ion-card-content>
+          <!-- Display project details for admin here -->
+          <p class="project-info"><strong>Project Name:</strong> XYZ</p>
+          <p class="project-info"><strong>Project Description:</strong> Lorem ipsum dolor sit amet...</p>
+        </ion-card-content>
+      </ion-card>
+
+      <ion-card class="expenses-card">
+        <ion-card-header>
+          <ion-card-title class="card-title">Expenses</ion-card-title>
+        </ion-card-header>
+        <ion-card-content>
+          <!-- Display expenses details for admin here -->
+          <p class="expense-info"><strong>Expense 1:</strong> $1000</p>
+          <p class="expense-info"><strong>Expense 2:</strong> $500</p>
+          <p class="expense-info"><strong>Expense 3:</strong> $750</p>
+        </ion-card-content>
+      </ion-card>
+    </div>
+  </div>
+</ion-content>
