@@ -1,7 +1,12 @@
 <donor>
-  <name>John Doe</name>
-  <username>johndoe</username>
-  <password>password123</password>
-  <role>Donor</role>
-  <donationAmount>100</donationAmount>
+  <email>charlotte_mangubat@gmail.com</email>
+  <username>charlotte</username>
+  <password>Charlotte123</password>
 </donor>
+
+<donor>
+  <email>carljan_buquiz@gmail.com</email>
+  <username>cj</username>
+  <password>cj123</password>
+</donor>
+

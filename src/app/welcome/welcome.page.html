@@ -1,19 +1,18 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>Donate to Change a Life!</ion-title>
+    <ion-title class="custom-font">Donate to Change a Life!</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content class="welcome-content">
-  <div class="background-image"></div>
+<ion-content class="background-image">
   <div class="container">
     <img src="assets/d.jpg" alt="Donation Image" class="logo">
-    <h2 class="heading">Welcome to our Donation Platform</h2>
+    <h2 class="heading custom-font">Welcome to our Donation Platform</h2>
 
     <ion-card class="login-card">
       <ion-card-content>
-        <ion-button expand="full" (click)="selectRole('admin')" class="login-button">Log in as Admin</ion-button>
-        <ion-button expand="full" (click)="selectRole('donor')" class="login-button">Log in as Donor</ion-button>
+        <ion-button expand="full" (click)="navigateToLoginPage('admin')" class="login-button">Log in as Admin</ion-button>
+        <ion-button expand="full" (click)="navigateToLoginPage('donor')" class="login-button">Log in as Donor</ion-button>
       </ion-card-content>
     </ion-card>
 

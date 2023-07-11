@@ -32,6 +32,14 @@ const routes: Routes = [
   {
     path: 'donor/dashboard',
     component: DonorDashboardPage
+  },
+  {
+    path: 'loginpage-admin',
+    loadChildren: () => import('./loginpage-admin/loginpage-admin.module').then( m => m.LoginpageAdminPageModule)
+  },
+  {
+    path: 'loginpage-donor',
+    loadChildren: () => import('./loginpage-donor/loginpage-donor.module').then( m => m.LoginpageDonorPageModule)
   }
 
 ];

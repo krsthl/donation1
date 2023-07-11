@@ -9,14 +9,13 @@ import { Router } from '@angular/router';
 export class WelcomePage {
   constructor(private router: Router) {}
 
-  selectRole(role: string) {
+  navigateToLoginPage(role: string) {
     if (role === 'admin') {
-      this.router.navigateByUrl('/landing');
+      this.router.navigate(['/loginpage-admin']);
     } else if (role === 'donor') {
-      this.router.navigateByUrl('/donate');
+      this.router.navigate(['/loginpage-donor']);
     }
   }
-
   createAccount() {
     this.router.navigateByUrl('/create-account');
   }
