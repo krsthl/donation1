@@ -11,7 +11,7 @@ export class DonorLandingPage {
   constructor(private router: Router) {}
 
   navigateToDashboard() {
-    this.router.navigate(['/donor/dashboard']);
+    this.router.navigate(['/welcome']);
   }
 
 }

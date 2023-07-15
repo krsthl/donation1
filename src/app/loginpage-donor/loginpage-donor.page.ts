@@ -51,7 +51,7 @@ export class LoginpageDonorPage  {
 
         if (authenticated) {
           // Login successful
-          this.navCtrl.navigateForward('/donate');
+          this.navCtrl.navigateForward('/tabs/donor-landing');
         
         }  else {
           // Login failed

@@ -51,7 +51,7 @@ export class LoginpageAdminPage  {
 
         if (authenticated) {
           // Login successful
-          this.navCtrl.navigateForward('/donate');
+          this.router.navigate(['/tabadmin/landing']);
         
         }  else {
           // Login failed
