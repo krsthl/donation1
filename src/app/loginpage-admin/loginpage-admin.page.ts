@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
+import { Router } from '@angular/router';
+import { HttpClient } from '@angular/common/http';
 import { NavController } from '@ionic/angular';
 
 @Component({
@@ -6,19 +8,66 @@ import { NavController } from '@ionic/angular';
   templateUrl: './loginpage-admin.page.html',
   styleUrls: ['./loginpage-admin.page.scss'],
 })
-export class LoginpageAdminPage implements OnInit {
+export class LoginpageAdminPage  {
+  username: string='';
+  password: string='';
+  loginFailed: boolean = false;
 
-  constructor(private navCtrl: NavController) {}
+  constructor(private navCtrl: NavController,private router: Router, private http: HttpClient) {}
 
   navigateToLanding() {
-    // Perform any necessary login authentication here
-  
-    // Navigate to the landing page
-    this.navCtrl.navigateForward('/landing');
-  }
-  
-  ngOnInit() {
-    // Initialization tasks or logic can be added here
-  }
-}
+    
+    this.http.get('assets/users.xml', { responseType: 'text' }).subscribe(
+      (xmlData) => {
+        const parser = new DOMParser();
+        const xmlDoc = parser.parseFromString(xmlData, 'text/xml');
 
+        // Extract user data from the XML
+        const users = xmlDoc.getElementsByTagName('user');
+        let authenticated = false;
+        let authenticated1 = false;
+
+        for (let i = 0; i < users.length; i++) {
+          const user = users[i];
+          const xmlUsername = user.getElementsByTagName('username')[0]?.textContent;
+          const xmlPassword = user.getElementsByTagName('password')[0]?.textContent;
+          const xmlrole = user.getElementsByTagName('role')[0]?.textContent;
+
+          if (this.username === xmlUsername && this.password === xmlPassword && xmlrole ==='student') {
+            authenticated = true;
+            break;
+          }
+          else if(this.username === xmlUsername && this.password === xmlPassword && xmlrole ==='coordinator'){
+            authenticated1 = true;
+            break;
+          }
+         
+        }
+       
+
+        if (authenticated) {
+          // Login successful
+          this.router.navigate(['/tabs/tab1'], { queryParams: { username: this.username} });
+          this.username = '';
+          this.password = '';
+        }  else if (authenticated1){
+          // Login failed
+          this.router.navigate(['/tabadmin/login'], { queryParams: { username: this.username} });
+          this.username = '';
+          this.password = '';
+        }
+      },
+      (error) => {
+        // Handle error
+        console.log('Error: ', error);
+      }
+
+      
+    );
+    return true;
+
+    
+  }
+  
+ 
+}

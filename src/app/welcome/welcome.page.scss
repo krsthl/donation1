@@ -75,5 +75,8 @@
   .create-account-button {
     margin-top: 10px;
   }
-  
+
+  ion-toolbar{
+    --background: linear-gradient(to right, rgba(15, 7, 7, 0.692), rgb(14, 149, 64));
+  }
   
