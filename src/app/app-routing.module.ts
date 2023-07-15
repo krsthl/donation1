@@ -40,7 +40,15 @@ const routes: Routes = [
   {
     path: 'loginpage-donor',
     loadChildren: () => import('./loginpage-donor/loginpage-donor.module').then( m => m.LoginpageDonorPageModule)
+  },  {
+    path: 'tabs',
+    loadChildren: () => import('./tabs/tabs.module').then( m => m.TabsPageModule)
+  },
+  {
+    path: 'tabadmin',
+    loadChildren: () => import('./tabadmin/tabadmin.module').then( m => m.TabadminPageModule)
   }
+
 
 ];
 
