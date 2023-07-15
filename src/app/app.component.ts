@@ -9,15 +9,21 @@ import { Router } from '@angular/router';
 export class AppComponent {
   constructor(private router: Router) {}
 
+
+  navigateToLoginPage(role: string) {
+    if (role === 'admin') {
+      this.router.navigate(['/loginpage-admin']);
+    } else if (role === 'donor') {
+      this.router.navigate(['/loginpage-donor']);
+    }
+  }
+
     createAccount() {
       // Implement your logic for creating a new account here
       // For example, navigate to the account creation page
       this.router.navigate(['/account-creation']);
     }
 
-    navigateToLoginPage(role: string) {
-      // Implement your logic for navigating to the login page with the selected role
-      this.router.navigate(['/login'], { queryParams: { role: role } });
-    }
+   
 
   }
