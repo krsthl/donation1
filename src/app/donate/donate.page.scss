@@ -25,7 +25,7 @@
   position: absolute;
   top: 0;
   left: -100%;
-  animation: moveAd 20s linear infinite;
+  animation: moveAd 10s linear infinite;
 }
 
 @keyframes moveAd {
@@ -43,4 +43,7 @@ ion-item {
 
 .donate-button {
   margin-top: 10px;
+}
+ion-toolbar{
+  --background: linear-gradient(to right, rgba(15, 7, 7, 0.692), rgb(14, 149, 64));
 }

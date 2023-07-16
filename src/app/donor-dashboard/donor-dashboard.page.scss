@@ -43,3 +43,7 @@ ion-item {
 ion-note {
   --ion-color-primary: #3880ff; /* Set the note text color */
 }
+
+ion-toolbar{
+  --background: linear-gradient(to right, rgba(15, 7, 7, 0.692), rgb(14, 149, 64));
+}

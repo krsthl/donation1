@@ -1,43 +1,53 @@
-ion-header {
-    background-color: black;
-    border-bottom: 1px solid #0a0000;
-  }
-  
-  ion-title {
-    font-size: 18px;
-    font-weight: bold;
-  }
-  
-  .login-container {
-    max-width: 300px;
-    margin: 0 auto;
-  }
-  
-  ion-item {
-    margin-bottom: 16px;
-  }
+.login-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
 
-  ion-label {
-    padding-left: 16px;
-  }
-  
-  .login-button {
-    background-color: #007bff;
-    color: #fff;
-  }
-  
-  .login-button:hover {
-    background-color: #0069d9;
-  }
-  
-  ion-input {
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    padding: 10px;
-  }
-  
-  ion-input:focus {
-    border-color: #007bff;
-    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
-  }
-  
+.login-form {
+  width: 90%;
+  max-width: 400px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.login-heading {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.form-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.forgot-password {
+  color: #666;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.sign-in {
+  background-color: #3880ff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.login-error {
+  color: red;
+  margin-top: 10px;
+}
+
+ion-toolbar{
+  --background: linear-gradient(to right, rgba(15, 7, 7, 0.692), rgb(14, 149, 64));
+}
