@@ -11,6 +11,6 @@ export class LandingPage {
   constructor(private router: Router) {}
 
   navigateToDashboard() {
-    this.router.navigate(['/dashboard']);
+    this.router.navigate(['/welcome']);
   }
 }

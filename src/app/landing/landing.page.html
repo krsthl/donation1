@@ -1,11 +1,14 @@
 <ion-header>
   <ion-toolbar>
-    <ion-buttons slot="end">
-      <ion-button defaultHref="/welcome"></ion-button>
-    </ion-buttons>
+    
     <ion-title>Landing - Admin</ion-title>
+    <ion-buttons slot="end" (click)=" navigateToDashboard()">
+      <ion-button>Logout</ion-button>
+    </ion-buttons>
   </ion-toolbar>
+ 
 </ion-header>
+
 
 <ion-content class="landing-content">
   <div class="container">
@@ -46,6 +49,5 @@
       </ion-card>
     </div>
 
-    <ion-button expand="full" (click)="navigateToDashboard()" class="dashboard-button">Go to Dashboard</ion-button>
   </div>
 </ion-content>

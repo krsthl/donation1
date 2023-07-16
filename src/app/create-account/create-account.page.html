@@ -25,5 +25,9 @@
     </ion-item>
 
     <ion-button expand="full" (click)="submitForm()">Create Account</ion-button>
+    <!-- Success message -->
+    <div *ngIf="successMessage" class="success-message">
+      {{ successMessage }}
+    </div>
   </div>
 </ion-content>

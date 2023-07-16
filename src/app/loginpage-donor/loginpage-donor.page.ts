@@ -68,7 +68,7 @@ export class LoginpageDonorPage  {
     );
     return true;
 
-    
+
   }
 
   ngOnInit() {

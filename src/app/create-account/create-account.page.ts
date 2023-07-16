@@ -10,6 +10,7 @@ export class CreateAccountPage {
   fullName!: string;
   email!: string;
   password!: string;
+  successMessage: string | null = null;
 
   constructor(private router: Router) {}
 
@@ -17,12 +18,13 @@ export class CreateAccountPage {
     // Perform account creation logic here
     // ...
 
-    // Navigate to the appropriate landing page or dashboard based on user type
-    const userType = 'donor' as 'admin' | 'donor'; // Type assertion to 'admin' | 'donor'
-    if (userType === 'admin') {
-      this.router.navigate(['/admin-landing']); // Navigate to Admin Landing page
-    } else {
-      this.router.navigate(['/donor-dashboard']); // Navigate to Donor Dashboard page
-    }
+    // Show success message
+    this.successMessage = 'Account created successfully';
+
+    // Clear form fields
+    this.fullName = '';
+    this.email = '';
+    this.password = '';
   }
+
 }
