@@ -1,20 +1,14 @@
-ion-header {
-  --ion-background-color: #3880ff; /* Set the header background color */
-  --ion-color-primary: #ffffff; /* Set the primary text color */
-}
-
-ion-title {
-  font-size: 20px; /* Adjust the title font size */
-}
-
-
-.container {
+.dashboard-content {
+  background-color: #f3f3f3;
   padding: 20px;
 }
 
-h2 {
-  font-size: 24px;
-  color: #adafb3; 
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.welcome-message {
   text-align: center;
   font-size: 24px;
   font-family: fantasy;
@@ -22,28 +16,52 @@ h2 {
   margin-bottom: 20px;
 }
 
-ion-card {
+.card-title {
+  font-size: 18px;
+  font-weight: bold;
+  color: #D35400;
+  font-size: 24px;
+  font-family: fantasy;
+  font-style: papyrus;
+}
+
+.donation-amount {
+  font-size: 24px;
+  text-align: center;
+  margin: 10px 0;
+}
+
+.project-info, .expense-info {
+  margin: 5px 0;
+}
+
+.admin-dashboard ion-card {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 10px;
   margin-bottom: 20px;
-  background-color: #f4f5f8; /* Set the card background color */
-}
-
-ion-card-title {
-  color: #060a10; /* Set the card title color */
-}
-
-ion-card-content {
-  padding: 15px;
-}
-
-ion-item {
-  --ion-background-color: #ffffff; /* Set the item background color */
-  --ion-color-primary: #3880ff; /* Set the item primary text color */
-}
-
-ion-note {
-  --ion-color-primary: #3880ff; /* Set the note text color */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 ion-toolbar{
   --background: linear-gradient(to right, rgba(15, 7, 7, 0.692), rgb(14, 149, 64));
 }
+
+p {
+  text-align: justify;
+  font-size: 22px;
+  font-family: fantasy;
+  font-style: papyrus;
+  margin-bottom: 20px;
+  color: black;
+}
+
+h3 {
+  text-align: center;
+  font-size: 24px;
+  font-family: fantasy;
+  font-style: papyrus;
+  margin-bottom: 20px;
+  color: black;
+}
+

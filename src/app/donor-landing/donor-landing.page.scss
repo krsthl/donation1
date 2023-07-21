@@ -8,13 +8,9 @@
 
 
 .container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 24px;
-    height: 100%;
-  }
+  max-width: 600px;
+  margin: 0 auto;
+}
   
   .welcome-message {
     font-size: 24px;
@@ -37,7 +33,9 @@
   .donation-card ion-card-title {
     font-weight: bold;
     color: #D35400;
-    font-size: 20px;
+    font-size: 24px;
+    font-family: fantasy;
+    font-style: papyrus;
   }
   
   .donation-card ion-card-content {
@@ -65,8 +63,10 @@
   .news-updates-card ion-card-title,
   .announcements-card ion-card-title {
     font-weight: bold;
-    font-size: 20px;
+    font-size: 24px;
     color: #2980B9;
+    font-family: fantasy;
+    font-style: papyrus;
   }
   
   .news-updates-card ion-card-content,
@@ -98,4 +98,43 @@
     --background: linear-gradient(to right, rgba(15, 7, 7, 0.692), rgb(14, 149, 64));
   }
   
-  
+  h2 {
+    text-align: center;
+    font-size: 24px;
+    font-family: fantasy;
+    font-style: papyrus;
+    margin-bottom: 5px;
+    margin-top: 10px;
+  }
+
+  p {
+    text-align: justify;
+    font-size: 18px;
+    font-family: fantasy;
+    font-style: papyrus;
+    margin-bottom: 5px;
+    margin-top: 10px;
+    color: black;
+
+  }
+
+  h4 {
+    text-align: center;
+    font-size: 20px;
+    font-family: fantasy;
+    font-style: papyrus;
+    margin-bottom: 5px;
+    margin-top: 10px;
+    color: black;
+  }
+
+  ion-button {
+    font-size: 20px;
+    font-family: fantasy;
+    font-style: papyrus;
+    margin-bottom: 5px;
+    margin-top: 10px;
+    color: rgb(3, 0, 0);
+  }
+
+

@@ -8,46 +8,36 @@
   </ion-toolbar>
  
 </ion-header>
-
-
-<ion-content class="landing-content">
+<ion-content class="dashboard-content">
   <div class="container">
-    <h2>Welcome, Admin!</h2>
+    <h2 class="welcome-message">Welcome, Admin!</h2>
 
-    <div class="donation-details">
-      <ion-card class="donations-card">
+    <div class="admin-dashboard">
+      <ion-card class="balance-card">
         <ion-card-header>
-          <ion-card-title>Total Donations</ion-card-title>
+          <ion-card-title class="card-title">Balance</ion-card-title>
         </ion-card-header>
         <ion-card-content>
-          <!-- Display total donation amount here -->
-          <h3>$5000</h3>
+          <!-- Display balance for admin here -->
+          <h3 class="balance-amount">$20000</h3>
         </ion-card-content>
       </ion-card>
 
       <ion-card class="project-card">
         <ion-card-header>
-          <ion-card-title>Project Details</ion-card-title>
+          <ion-card-title class="card-title">Project Details</ion-card-title>
         </ion-card-header>
         <ion-card-content>
-          <!-- Display project details here -->
-          <p>Project Name: XYZ</p>
-          <p>Project Description: Lorem ipsum dolor sit amet...</p>
+          <h3 class="project-name">Project Name: Elderly Care Initiative</h3>
+          <p class="project-description">
+            The Elderly Care Initiative aims to improve the quality of life for elderly individuals in our community. Through this project, we strive to provide comprehensive support and assistance to seniors who may be facing challenges such as loneliness, health issues, and limited access to resources.
+          </p>
+          <p class="project-gratitude">
+            We extend our heartfelt gratitude to all our donors who have supported us in this noble cause. Your generosity enables us to provide essential care and support to our elderly population, allowing them to age with dignity and grace. Together, we can create a nurturing and inclusive environment for our seniors.
+          </p>
         </ion-card-content>
       </ion-card>
-
-      <ion-card class="expenses-card">
-        <ion-card-header>
-          <ion-card-title>Expenses</ion-card-title>
-        </ion-card-header>
-        <ion-card-content>
-          <!-- Display expenses details here -->
-          <p>Expense 1: $1000</p>
-          <p>Expense 2: $500</p>
-          <p>Expense 3: $750</p>
-        </ion-card-content>
-      </ion-card>
+    
     </div>
-
   </div>
 </ion-content>

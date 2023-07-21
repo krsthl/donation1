@@ -21,7 +21,7 @@ const routes: Routes = [
   },
   {
     path: '',
-    redirectTo: '/tabs/donor-landing',
+    redirectTo: '/tabs/donate',
     pathMatch: 'full'
   }
 ];

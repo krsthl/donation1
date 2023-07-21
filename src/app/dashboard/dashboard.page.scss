@@ -19,6 +19,10 @@
   .card-title {
     font-size: 18px;
     font-weight: bold;
+    color: black;
+    font-size: 24px;
+    font-family: fantasy;
+    font-style: papyrus;
   }
   
   .donation-amount {
@@ -42,3 +46,22 @@
   ion-toolbar{
     --background: linear-gradient(to right, rgba(15, 7, 7, 0.692), rgb(14, 149, 64));
   }
+
+  p {
+    text-align: left;
+    font-size: 15px;
+    font-family: fantasy;
+    font-style: papyrus;
+    margin-bottom: 20px;
+    color: black;
+  }
+
+  h3 {
+    text-align: center;
+    font-size: 24px;
+    font-family: fantasy;
+    font-style: papyrus;
+    margin-bottom: 20px;
+    color: black;
+  }
+  
