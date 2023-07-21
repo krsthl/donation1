@@ -5,4 +5,10 @@
   <password>Kristhel123</password>
 </admin>
 
+<admin>
+  <email>neil_suelto@gmail.com</email>
+  <username>neil</username>
+  <password>neil123</password>
+</admin>
+
 </admins>
